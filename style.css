@@ -445,10 +445,10 @@ ul#menu {
     padding: 0.5rem 0 0.5rem 1rem;
   }
   
-  ul#menu.show-nav li:not(.submenu-parent) {
+   /* ul#menu.show-nav li:not(.submenu-parent) {
     /* Adds background color to nav buttons, but does :NOT surround the submenu parent box */
     /* background-color: rgba(255, 255, 255, 0.1); */
-  }
+  
   
   nav.primary-nav a {
     /* Force anchor tag to fill "button" area, so you can tap beside the text and link still works */
