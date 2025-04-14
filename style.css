@@ -100,7 +100,7 @@
     --highlight-color: #f3c;
   
     --titles-font: "Montserrat", sans-serif;
- --bodytext-font: "Karla", sans-serif;
+    --bodytext-font: "Karla", sans-serif;
 
 
    --footerNav-bg-color: rgb(255, 255, 255);
@@ -228,6 +228,16 @@ header .branding {
     width: 3rem;
     height: auto;
   }
+
+h1{
+  padding: 0.6rem;
+}
+
+  .flex-container {
+    padding: 0.6rem;
+}
+
+  
 
   
 
