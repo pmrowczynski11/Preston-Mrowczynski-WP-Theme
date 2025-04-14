@@ -1,61 +1,27 @@
-<?php  // START STEP 2.3
-    // Add this to all your php files for added security
+<?php  if (!defined('ABSPATH')) exit; ?>
+<?php get_header(); ?>
 
-    if (!defined('ABSPATH'))
-        exit; 
-        // Exit if accessed directly. 
-        // Ex: Not being called up directly by index.php or some other theme PHP file
-    ?><!--  START WORDPRESS GET_HEADER CONTENT IN INDEX.PHP -->
-    <?php get_header(); ?>
-    <?php // this function loads the header.php file ?>
+<h1><?php the_title(); ?></h1>
 
-
-    <!--  END WORDPRESS GET_HEADER CONTENT IN INDEX.PHP -->
-    <!-- STEP 2.3 ENDS HERE -->
-       <!-- START STEP 2.8 ADD H1 AND WORDPRESS LOOP -->
-  <h1><?php the_title(); // AUTOMATICALLY ADDS THE PAGE TITLE ?></h1>
-  
-  <!-- opening flex-container will go here -->
-   <!-- START STEP 2.20 ADD FLEX CONTAINER -->
 <div class="flex-container">
-  
-  <main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <?php // NOTE IDs AND CLASSES ARE AUTOMATICALLY ADDED HERE ?>
 
 
-  <!-- START WORDPRESS LOOP -->
+<main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-      <?php 
-          if ( have_posts() ) : 
-          while ( have_posts() ) : the_post();
-              the_content();
-          endwhile;
-      else :
-          _e( 'Sorry, no posts matched your criteria.', 'preston-mrowczynski' );
-          // MAKE SURE TO CHANGE BILLY-POPPINS HERE
-      endif;
-      ?>
+    <?php 
+        if ( have_posts() ) : 
+        while ( have_posts() ) : the_post();
+            the_content();
+        endwhile;
+    else :
+        _e( 'Sorry, no posts matched your criteria.', 'montreal-real-estate-preston-mrowczynski' );
+    endif;
+    ?>
 
-      <?php wp_link_pages(); ?>
+<?php wp_link_pages(); ?>  
+</main>
 
-  <!-- END WORDPRESS LOOP -->    
-  </main>
-
-   <!-- END STEP 2.8 ADD H1 AND WORDPRESS LOOP -->
-        <!-- START STEP 2.22 ADD SIDEBAR -->
-
-        <?php get_sidebar(); ?>
-
-<!-- END STEP 2.22 ADD SIDEBAR -->
-  <!-- closing flex-container will go here -->
-   <!-- END STEP 2.20 ADD FLEX CONTAINER -->
+<?php get_sidebar(); ?>
 </div>
 
-        <!-- START STEP 2.6 ENABLE FOOTER -->
-
-
-        <?php get_footer(); ?>
-        <?php // this functions loads the footer.php file ?>   
-
-
-    <!-- END STEP 2.6 ENABLE FOOTER -->
+<?php get_footer(); ?>
