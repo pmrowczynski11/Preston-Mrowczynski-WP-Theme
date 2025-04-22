@@ -182,17 +182,17 @@ figcaption {
         line-height: 1.2;  /* override the default line-height */
         }
 
-    h2 {margin: 2em 0 1em 0}
+    h2 {margin: 2rem 0 0.5rem 0}
 
-    h3 {margin: 2em 0 1em 0}
+    h3 {margin: 2rem 0 0.5rem 0}
 
-    h4 {margin: 2em 0 1em 0}
+    h4 {margin: 2rem 0 0.5rem 0}
 
-    h5 {margin: 2em 0 1em 0}
+    h5 {margin: 2rem 0 0.5rem 0}
 
-    h6 {margin: 2em 0 1em 0}
+    h6 {margin: 2rem 0 0.5rem 0}
 
-    p {margin: 0 0 1em 0}
+    p {margin: 0 0 0.5rem 0}
   
 
   body {
